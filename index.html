@@ -14,7 +14,10 @@
 
     <nav class="navbar">
         <div style="display: flex; align-items: center; gap: 1rem;">
-            <h3 class="navbar__logo">✨ Gemini</h3>
+            <h3 class="navbar__logo">
+                <span class="logo_icon"></span> Gemini Ashwin Gupta
+
+            </h3>
         </div>
         <div style="display: flex; gap: 0.5rem;">
             <button class="navbar__button" id="exportChat" title="Export Chat">
@@ -28,43 +31,43 @@
 
     <header class="header">
         <div class="header__title">
-            <h1>Hello, There!</h1>
-            <h2>How can I help you today?</h2>
-        </div>
-        <div class="suggests">
-            <div class="suggests__item">
-                <p class="suggests__item-text">
-                    Give tips on helping kids finish their homework on time
-                </p>
-                <div class="suggests__item-icon">
-                    <i class='bx bx-stopwatch'></i>
+            <h1>Welcome to Gemini AI</h1>
+            <h2>Your intelligent assistant for ideas, code, and conversations</h2>
+
+            <div class="suggests">
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Give tips on helping kids finish their homework on time
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-stopwatch'></i>
+                    </div>
+                </div>
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Help me write an out-of-office email
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-edit-alt'></i>
+                    </div>
+                </div>
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Give me phrases to learn a new language
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-compass'></i>
+                    </div>
+                </div>
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Show me how to build something by hand
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-wrench'></i>
+                    </div>
                 </div>
             </div>
-            <div class="suggests__item">
-                <p class="suggests__item-text">
-                    Help me write an out-of-office email
-                </p>
-                <div class="suggests__item-icon">
-                    <i class='bx bx-edit-alt'></i>
-                </div>
-            </div>
-            <div class="suggests__item">
-                <p class="suggests__item-text">
-                    Give me phrases to learn a new language
-                </p>
-                <div class="suggests__item-icon">
-                    <i class='bx bx-compass'></i>
-                </div>
-            </div>
-            <div class="suggests__item">
-                <p class="suggests__item-text">
-                    Show me how to build something by hand
-                </p>
-                <div class="suggests__item-icon">
-                    <i class='bx bx-wrench'></i>
-                </div>
-            </div>
-        </div>
     </header>
 
     <section class="chats"></section>
@@ -72,7 +75,9 @@
     <section class="prompt">
         <form action="#" class="prompt__form" novalidate>
             <div class="prompt__input-wrapper">
-                <input type="text" placeholder="Enter a prompt here" class="prompt__form-input" required>
+                <input type="text" placeholder="Ask Gemini anything..." class="prompt__form-input" autocomplete="off"
+                    spellcheck="false" required>
+
                 <button class="prompt__form-button" id="sendButton">
                     <i class='bx bx-send'></i>
                 </button>
@@ -82,8 +87,9 @@
             </div>
         </form>
         <p class="prompt__disclaim">
-            Gemini may display inaccurate info, including about people, so double-check its responses.
+            Gemini may generate inaccurate information. Please verify critical details.
         </p>
+
     </section>
 
 
